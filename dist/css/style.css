@@ -1,0 +1,1182 @@
+/**Variables for project**/
+/**Mixins for project**/
+/**Helper classes for project**/
+body {
+  overflow-x: hidden; }
+
+.main-wrapper {
+  margin: 0 auto;
+  max-width: 1855px;
+  padding: 0 15px; }
+
+.secondary-wrapper {
+  max-width: 1486px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.small-wrapper {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1284px; }
+
+.disappear,
+.unactive {
+  display: none; }
+
+.appear {
+  display: block !important; }
+
+.button--activated {
+  color: #d7bc87;
+  border: black solid 1px; }
+
+@media screen and (max-width: 425px) {
+  body {
+    padding: 0 15px; } }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/**Typography for project*/
+body {
+  font-family: "Open Sans"; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Roboto Condensed";
+  text-transform: uppercase;
+  font-weight: 700; }
+
+h4 {
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px; }
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s ease-in-out; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("../fonts/iconfont.eot?1666904158857");
+  src: url("../fonts/iconfont.eot?#iefix-1666904158857") format("embedded-opentype"), url("../fonts/iconfont.woff2?1666904158857") format("woff2"), url("../fonts/iconfont.woff?1666904158857") format("woff"), url("../fonts/iconfont.ttf?1666904158857") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^='icon-']:before,
+[class*=' icon-']:before {
+  font-family: 'iconfont';
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  font-size: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/*
+   Glyphs list
+   */
+.icon-icon-bicycle:before {
+  content: '\ea01'; }
+
+.icon-icon-caffe:before {
+  content: '\ea02'; }
+
+.icon-icon-calendar:before {
+  content: '\ea03'; }
+
+.icon-icon-eat:before {
+  content: '\ea04'; }
+
+.icon-icon-facebook:before {
+  content: '\ea05'; }
+
+.icon-icon-instagram:before {
+  content: '\ea06'; }
+
+.icon-icon-facebook-bottom:before {
+  content: '\ea05'; }
+
+.icon-icon-instagram-bottom:before {
+  content: '\ea06'; }
+
+.icon-icon-location:before {
+  content: '\ea07'; }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../src/fonts/OpenSans-Regular.woff2") format("woff2"), url("../../src/fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../src/fonts/OpenSans-Italic.woff2") format("woff2"), url("../../src/fonts/OpenSans-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Noto Serif Georgian";
+  src: url("../../src/fonts/NotoSerifGeorgian-Light.woff2") format("woff2") url("../../src/fonts/NotoSerifGeorgian-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Noto Serif Georgian";
+  src: url("../../src/fonts/NotoSerifGeorgian-Medium.woff2") format("woff2"), url("../../src/fonts/NotoSerifGeorgian-Medium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../../src/fonts/RobotoCondensed-Light.woff2") format("woff2"), url("../../src/fonts/RobotoCondensed-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../../src/fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../../src/fonts/RobotoCondensed-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../../src/fonts/RobotoCondensed-Bold.woff2") format("woff2") url("../../src/fonts/RobotoCondensed-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+
+/*ALL HEADERS IN PROJECT*/
+h1 {
+  display: none; }
+
+.card__header {
+  margin-top: 19px; }
+
+.welcome__text-header {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-bottom: 46px;
+  position: relative;
+  padding-bottom: 28px; }
+  .welcome__text-header::after {
+    position: absolute;
+    content: "";
+    background-color: black;
+    width: 39px;
+    height: 1px;
+    border: black solid 1px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); }
+
+.drinks__inner-header {
+  font-size: 72px;
+  font-weight: 700;
+  letter-spacing: 7.2px;
+  margin-bottom: 46px; }
+
+.coffe__header,
+.dessert__header {
+  margin-bottom: 42px; }
+
+.coffe__header,
+.beer__header,
+.intensity__header,
+.cocktails__header,
+.food__header,
+.dessert__header {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 2.3px;
+  color: white;
+  border-bottom: 5px solid white;
+  padding-bottom: 3px; }
+
+.food__header {
+  color: black;
+  border-bottom: 5px solid black;
+  margin-bottom: 37px; }
+
+.price-name__header {
+  max-width: 332px;
+  letter-spacing: 0.6px;
+  font-weight: bold;
+  line-height: 27px; }
+
+.beer__header,
+.intensity__header {
+  color: black;
+  border-bottom: black solid 5px;
+  margin-bottom: 23px; }
+
+.cocktails__header {
+  border-top: dotted 3px black;
+  border-bottom: dotted 3px black;
+  color: black;
+  padding: 6px 0 5px 0;
+  margin-bottom: 22px; }
+
+.events__header,
+.worktime__header,
+.menu__inner-header {
+  font-size: 73px;
+  font-weight: 700;
+  letter-spacing: 6.6px;
+  margin-bottom: 43px; }
+
+.standards__header {
+  font-size: 70.2px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 5.9px; }
+
+.about-object__header {
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  font-size: 20px;
+  margin-bottom: 29px; }
+
+.times__day {
+  font-size: 22px;
+  letter-spacing: 0.3px;
+  font-weight: 300; }
+
+@media screen and (max-width: 425px) {
+  .standards__header {
+    font-size: 45.2px; }
+  .price-name__header {
+    max-width: 305px; }
+  .events__header,
+  .worktime__header,
+  .menu__inner-header {
+    font-size: 56px; }
+  .drinks__inner-header,
+  .welcome__text-header {
+    font-size: 45px; } }
+
+.classic-button {
+  border: black solid 2px;
+  padding: 8px 13px;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1.1px;
+  transition: 0.3s ease-in-out; }
+
+.menu__buttons {
+  padding: 13px 24px;
+  border: white solid 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1.1px;
+  margin-bottom: -3px; }
+  .menu__buttons:hover {
+    border: black solid 2px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out; }
+
+.clicked {
+  border: black solid 2px;
+  color: #d7bc87; }
+
+.card__button:hover {
+  background-color: black;
+  color: white;
+  transition: 0.3s ease-in-out; }
+
+.welcome__button {
+  background-color: black;
+  color: white; }
+  .welcome__button:hover {
+    opacity: 0.6;
+    transition: 0.3s ease-in-out;
+    cursor: pointer; }
+
+/**Header and header navigation in project**/
+header {
+  padding: 12px 0;
+  position: fixed;
+  z-index: 1;
+  margin-bottom: 2px;
+  top: 0;
+  width: 100%;
+  background-color: white; }
+
+.header__line {
+  display: flex;
+  justify-content: space-between; }
+
+.header__linked-logo {
+  display: block;
+  max-width: 160px;
+  flex: 1 1 160px; }
+  .header__linked-logo img {
+    max-width: 100%;
+    flex: 1 1 100%; }
+  .header__linked-logo:hover {
+    opacity: 0.6;
+    transition: 0.3s ease-in-out; }
+
+.header__navigation {
+  padding: 14px 0;
+  display: flex; }
+
+.header__navbar {
+  display: flex;
+  gap: 33px; }
+
+.header__list-link {
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1.8px; }
+  .header__list-link:hover {
+    color: #ff4229; }
+
+.hamburger {
+  border: none;
+  display: none;
+  background: none; }
+
+.bar {
+  width: 29px;
+  height: 4px;
+  background-color: black;
+  display: block;
+  margin-bottom: 5px; }
+
+@media screen and (max-width: 425px) {
+  .hamburger {
+    display: block;
+    position: relative;
+    z-index: 1; }
+  .active .bar:nth-child(2) {
+    opacity: 0;
+    background-color: white; }
+  .active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    background-color: white; }
+  .active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+    background-color: white; }
+  .header__navbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    transition: 0.7s ease-in-out;
+    background: black; }
+  .header__list-item:first-child {
+    margin-top: 100px; }
+  .header__list-link {
+    color: white;
+    font-size: 18px;
+    font-weight: 700; }
+  .active {
+    top: 0; } }
+
+/**Banner setting**/
+.banner {
+  margin-bottom: 81px;
+  position: relative;
+  z-index: 0; }
+
+.banner__wallpaper,
+.banner__wallpaper-responsive {
+  max-width: 100%;
+  min-height: 813px;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 9999;
+  background-position-x: 4px;
+  background-position-y: 81px;
+  background-repeat: no-repeat; }
+
+@media screen and (max-width: 425px) {
+  .banner .main-wrapper {
+    padding: 0; }
+  .banner__wallpaper-responsive {
+    min-height: 463px;
+    background-size: cover;
+    display: block; }
+  .banner__wallpaper {
+    display: none; } }
+
+/**About section propery**/
+.about {
+  margin-bottom: 228px; }
+
+.about__line {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px; }
+
+.about__card {
+  max-width: calc(25% - 30px);
+  flex: 1 1 calc(25% - 30px);
+  text-align: center;
+  margin: 0 15px 15px 0;
+  padding-left: 15px; }
+  .about__card .card__phone:hover {
+    opacity: 0.7; }
+
+.about__card-inner {
+  max-width: 367px;
+  margin: 0 auto; }
+
+.card__text {
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  line-height: 28px;
+  margin-bottom: 32px; }
+
+.icon-icon-eat,
+.icon-icon-bicycle,
+.icon-icon-caffe,
+.icon-icon-calendar {
+  font-size: 50px;
+  color: #aaaaaa;
+  margin-bottom: 19px; }
+
+@media screen and (max-width: 425px) {
+  .about__card {
+    max-width: 100%;
+    flex: 1 1 100%;
+    margin: 0 auto 50px auto;
+    padding: 0 10px; }
+    .about__card:last-child {
+      margin: 0 0 50px 0; } }
+
+/**MENU PROPERY**/
+.menu {
+  margin-bottom: 130px; }
+
+.menu__inner-text {
+  text-align: center;
+  margin: 0 auto 68px auto;
+  max-width: 500px; }
+
+.menu__inner-underheader {
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  font-size: 15px;
+  line-height: 23px;
+  color: #aaaaaa; }
+
+.menu__holder-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 13px;
+  margin-bottom: 54px; }
+
+.breakfast {
+  display: none; }
+
+.food__columns {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -30px; }
+
+.food__column-list,
+.apetizzer__column {
+  max-width: calc(33.33% - 60px);
+  flex: 1 1 calc(33.33% - 60px);
+  margin: 0 30px; }
+
+.apetizzer__column .food__column-list {
+  max-width: 100%;
+  flex: 1 1 100%;
+  margin: 0; }
+
+.food__price-name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1px;
+  align-items: center; }
+
+.food__price {
+  margin-bottom: 25px; }
+
+.price-name__cost {
+  font-style: italic;
+  font-size: 15px; }
+
+.food__price-description {
+  font-size: 13px;
+  max-width: 315px;
+  line-height: 24px; }
+
+.food__underheader-text {
+  color: #aaaaaa;
+  font-size: 14px;
+  margin-bottom: 28px;
+  font-family: "Noto Serif Georgian";
+  font-style: italic; }
+
+.desserts__main-line {
+  display: flex; }
+
+.food__columns-desert {
+  max-width: calc(65% - 50px);
+  flex: 1 1 calc(65% - 50px); }
+
+.desert__menu {
+  max-width: calc(35% - 50px);
+  flex: 1 1 calc(35% - 50px);
+  background-color: #303033;
+  max-height: 310px; }
+  .desert__menu .desert__menu-inner {
+    padding: 24px; }
+
+.desert__price {
+  display: flex;
+  justify-content: space-between;
+  max-width: 366px;
+  flex: 1 1 366px;
+  margin-bottom: 36px; }
+
+.food__columns-desert,
+.desert__menu {
+  margin: 0 25px; }
+
+.desert__line {
+  display: flex;
+  margin: 0 -30px; }
+
+.desert__column-list {
+  max-width: calc(50% - 60px);
+  flex: 1 1 calc(50% - 60px);
+  margin: 0 30px; }
+
+.dessert__price {
+  display: flex;
+  justify-content: space-between;
+  max-width: 366px;
+  flex: 1 1 366px;
+  margin-bottom: 36px; }
+
+.dessert__name {
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.6px; }
+
+.dessert__cost {
+  color: white;
+  font-style: italic;
+  font-size: 15px; }
+
+@media screen and (max-width: 425px) {
+  .food__column-list,
+  .apetizzer__column {
+    max-width: 100%;
+    flex: 1 1 100%;
+    margin: 0 30px; }
+  .menu__inner-underheader {
+    font-size: 13px; }
+  .food__underheader-text {
+    line-height: 20px; }
+  .food__columns-desert {
+    max-width: 100%;
+    flex: 1 1 100%;
+    margin: 0 auto; }
+  .desserts__main-line,
+  .desert__line {
+    flex-direction: column; }
+  .desert__column-list {
+    max-width: 100%;
+    flex: 1 1 100%; }
+  .desert__menu {
+    max-width: 100%;
+    flex: 1 1 100%;
+    margin: 0 -5px;
+    min-height: 404px; } }
+
+/**Welcome properties**/
+.welcome {
+  margin-bottom: 89px; }
+
+.welcome__line {
+  display: flex; }
+
+.welcome__side-image {
+  max-width: 51%;
+  flex: 1 1 51%;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.welcome__side-text {
+  max-width: 49%;
+  flex: 1 1 49%;
+  text-align: center;
+  min-height: 755px; }
+
+.welcome__text {
+  margin: 0 auto;
+  padding: 229px 0px 208px 17px;
+  max-width: 616px; }
+
+.welcome__text-underheader {
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  color: #aaaaaa; }
+
+.welcome__text-lines {
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  color: #aaaaaa;
+  line-height: 28px;
+  margin-bottom: 33px; }
+
+@media screen and (max-width: 425px) {
+  .welcome__line {
+    display: flex;
+    flex-direction: column; }
+  .welcome__side-image {
+    max-width: 100%;
+    flex: 1 1 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 350px;
+    background-size: cover; }
+  .welcome__text {
+    margin: 0 auto;
+    padding: 50px 0px 208px 0px;
+    max-width: 616px; }
+  .welcome__side-text {
+    max-width: 100%;
+    flex: 1 1 100%;
+    text-align: center;
+    min-height: 500px; } }
+
+/**Drinks section propery**/
+.drinks {
+  margin-bottom: 291px; }
+
+.drinks__inner-text {
+  margin: 0 auto;
+  max-width: 500px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-left: 8px;
+  margin-bottom: 92px; }
+
+.cocktails__inner {
+  margin-left: auto; }
+
+.beer__inner,
+.intensity-inner,
+.cocktails__inner {
+  max-width: 344px;
+  flex: 1 1 344px; }
+
+.cocktails__img {
+  max-width: 100%;
+  flex: 1 1 100%;
+  margin-bottom: 28px; }
+
+.cocktails__description {
+  font-size: 13px;
+  max-width: 298px;
+  letter-spacing: 0.1px;
+  line-height: 22px; }
+
+.drinks__menu-line {
+  display: flex;
+  flex-wrap: wrap; }
+
+.drinks__menu-classic {
+  max-width: 65.8%;
+  flex: 1 1 66.8%; }
+
+.cocktails__menu--size {
+  padding: 31px 17px 0 0; }
+
+.drinks__menu-coffe {
+  max-width: 100%;
+  background-color: #303033;
+  padding: 24px 24px 0 24px;
+  min-height: 230px;
+  margin-bottom: 78px; }
+
+.coffe__menu-line {
+  display: flex; }
+
+.cocktails__menu {
+  max-width: 33.2%;
+  flex: 1 1 33.2%; }
+
+.beer__menu,
+.intensity__menu {
+  max-width: 389px;
+  flex: 1 1 389px;
+  padding-left: 45px; }
+
+.coffe__name,
+.beer__name,
+.intensity__name,
+.cocktails__name {
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.6px; }
+
+.beer__name,
+.intensity__name,
+.cocktails__name {
+  color: black; }
+
+.drinks__menu-alcohol-line {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -15px; }
+
+.beer__price,
+.intensity__price,
+.cocktails__price {
+  display: flex;
+  justify-content: space-between; }
+
+.beer__price,
+.intensity__price {
+  margin-bottom: 36px; }
+
+.cocktails__price {
+  margin-bottom: 8px; }
+
+.coffe__price {
+  display: flex;
+  justify-content: space-between;
+  max-width: 366px;
+  flex: 1 1 366px;
+  margin-bottom: 36px; }
+  .coffe__price:last-child {
+    margin-bottom: 0; }
+
+.coffe__cost {
+  color: white;
+  font-style: italic;
+  font-size: 15px; }
+
+.cocktails__about {
+  margin-bottom: 31px; }
+
+.beer__underheader,
+.intensity__underheader {
+  font-size: 14px;
+  color: #aaaaaa;
+  font-family: "Noto Serif Georgian";
+  font-style: italic;
+  margin-bottom: 36px; }
+
+.cocktails__underheader {
+  margin-bottom: 22px;
+  font-size: 14px;
+  color: #aaaaaa;
+  font-family: "Noto Serif Georgian";
+  font-style: italic; }
+
+.drinks__inner-underheader {
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-left: -9px;
+  color: #aaaaaa; }
+
+.coffe__menu-column,
+.coffe__menu-column--changer {
+  max-width: 50%;
+  flex: 1 1 50%; }
+
+.coffe__menu-column--changer {
+  padding-left: 57px; }
+
+@media screen and (max-width: 425px) {
+  .drinks {
+    margin-bottom: 148px; }
+  .coffe__menu-line {
+    flex-direction: column; }
+  .drinks__menu-classic {
+    max-width: 100%;
+    flex: 1 1 100%;
+    min-height: 250px; }
+  .coffe__menu-column,
+  .coffe__menu-column--changer {
+    max-width: 100%;
+    flex: 1 1 100%;
+    padding-left: 0;
+    margin-bottom: 36px; }
+  .cocktails__menu {
+    max-width: 100%;
+    flex: 1 1 100%; }
+  .cocktails__menu--size {
+    padding: 0; }
+  .cocktails__inner {
+    margin: 0 auto; }
+  .beer__menu,
+  .intensity__menu {
+    max-width: 389px;
+    flex: 1 1 389px;
+    padding: 0 45px; } }
+
+/**EVENTS PROPERTY**/
+.events {
+  margin-bottom: 82px; }
+
+.events__inner-text {
+  margin: 0 auto 208px auto;
+  max-width: 500px;
+  text-align: center; }
+
+.event__underheader-text {
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  font-size: 15px;
+  line-height: 23px;
+  color: #aaaaaa; }
+
+.events__standards {
+  border: black solid 1px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 1179px;
+  background-attachment: fixed; }
+
+.events__header-inner {
+  padding-top: 130px;
+  text-align: center;
+  margin-bottom: 62px; }
+
+.standards__about-text {
+  background-color: #2a2c2e;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 698px;
+  padding: 57px 0 0 0;
+  min-height: 717px; }
+
+.standards__about-object {
+  margin: 0 auto;
+  max-width: 653px;
+  margin-bottom: 35px; }
+
+.about-object__text {
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: -0.3px;
+  color: #aaaaaa; }
+
+@media screen and (max-width: 425px) {
+  .standards__about-text {
+    padding: 57px 20px 0 20px; }
+  .standards__about-object:last-child {
+    margin-bottom: 0;
+    padding-bottom: 45px; } }
+
+/**WORKTIME PROPS**/
+.worktime {
+  margin-bottom: 167px; }
+
+.worktime__inner-text {
+  max-width: 600px;
+  margin: 0 auto 125px auto;
+  text-align: center; }
+
+.worktime__underheader {
+  color: #aaaaaa;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 0.8px; }
+
+.worktime__times {
+  margin: 0 auto;
+  max-width: 488px; }
+
+.times__days {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 47px; }
+
+.times__hours {
+  font-size: 22px;
+  font-family: "Roboto Condensed";
+  letter-spacing: 0.4px; }
+
+@media screen and (max-width: 425px) {
+  .worktime {
+    margin-bottom: 100px; }
+  .times__days {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 47px; }
+  .times__day {
+    margin-bottom: 15px; } }
+
+/**FOOTER PROPS**/
+.footer {
+  margin-bottom: 50px; }
+
+.footer__line {
+  display: flex;
+  margin: 0 -12px; }
+
+.footer__contact {
+  max-width: calc(33.33% - 24px);
+  flex: 1 1 calc(33.33% - 24px);
+  background-color: #2a2c2e;
+  margin: 0 12px;
+  padding: 28px 0 0 46px;
+  min-height: 573px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.contact__address {
+  max-width: 167px;
+  margin: 11px 0 39px 0; }
+
+.contact__adress-name {
+  color: #aaaaaa;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 27px; }
+
+.location__link {
+  color: white;
+  border: white solid 2px;
+  letter-spacing: 1px; }
+  .location__link:hover {
+    background-color: white;
+    color: black; }
+
+.contact__information {
+  color: #aaaaaa;
+  margin: 42px 0 44px 0;
+  font-size: 15px; }
+  .contact__information .contact__number {
+    letter-spacing: -0.1px;
+    margin-bottom: 13px; }
+  .contact__information .contact__mail {
+    letter-spacing: -0.3px; }
+    .contact__information .contact__mail a {
+      color: #aaaaaa; }
+      .contact__information .contact__mail a:hover {
+        opacity: 0.7; }
+
+.contact__phone {
+  color: #aaaaaa; }
+  .contact__phone:hover {
+    opacity: 0.7; }
+
+.contact__social-media-link {
+  padding: 3px 12px 9px 12px;
+  border: solid 2px white;
+  color: white; }
+  .contact__social-media-link:hover {
+    color: black;
+    background-color: white; }
+
+.contact__social-media-linked {
+  margin-right: 5px; }
+
+.contact__users-text {
+  margin-bottom: 185px;
+  padding-top: 3px; }
+
+.contact__info-line {
+  border: none;
+  border-bottom: dashed 1px #aaaaaa;
+  background-color: #2a2c2e;
+  color: #aaaaaa;
+  display: block;
+  font-size: 17px;
+  padding-bottom: 15px;
+  width: 91%;
+  margin-bottom: 16px;
+  letter-spacing: 0.7px;
+  font-weight: 300; }
+
+.contact__verification {
+  border: #aaaaaa solid 1px;
+  border-radius: 2px;
+  max-width: 301px;
+  margin-bottom: 12px; }
+
+.contact__verification--line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3px; }
+
+.verification__property {
+  display: flex;
+  color: white;
+  align-items: center;
+  padding-top: 4px; }
+
+.verification__checkbox {
+  width: 46px;
+  height: 29px; }
+
+.verification__text {
+  font-size: 13px;
+  font-weight: 700; }
+
+.classic-button--verification {
+  padding: 8px 13px;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1.1px;
+  transition: 0.3s ease-in-out;
+  border: white solid 1px;
+  background: none;
+  color: white;
+  padding: 12px 13px; }
+  .classic-button--verification:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer; }
+
+.verification__firm {
+  color: white;
+  text-align: center;
+  padding: 9px 9px 0 0;
+  line-height: 12px; }
+  .verification__firm .verification__img-text {
+    font-size: 10px; }
+  .verification__firm a {
+    color: white;
+    font-size: 8px; }
+    .verification__firm a:hover {
+      opacity: 0.7; }
+
+.verification__img-text {
+  margin-bottom: 3px; }
+
+.verification__privacy {
+  display: flex;
+  align-items: center; }
+  .verification__privacy span {
+    margin: 0 2px; }
+
+.verification__img {
+  max-width: 35px; }
+
+.footer__bottom-holder {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 128px 0 20px 0;
+  text-align: center;
+  color: #aaaaaa; }
+
+.bottom-holder__media {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-bottom: 46px; }
+
+.bottom-holder__copyright {
+  letter-spacing: 0.3px;
+  font-size: 13px; }
+
+.contact__social-media {
+  display: flex;
+  margin-top: 72px; }
+
+.icon-icon-location,
+.icon-icon-facebook,
+.icon-icon-instagram {
+  font-size: 11px; }
+
+.icon-icon-instagram-bottom,
+.icon-icon-facebook-bottom {
+  font-size: 22px;
+  color: #aaaaaa; }
+
+@media screen and (max-width: 425px) {
+  .footer__line {
+    flex-direction: column; }
+  .footer__contact {
+    max-width: 100%;
+    flex: 1 1 100%;
+    margin-bottom: 50px;
+    padding: 28px 0 0 20px; }
+  .footer__contact-image {
+    min-height: 300px; } }
+
+@media screen and (max-width: 320px) {
+  .verification {
+    margin: 0 auto; }
+  .contact__verification {
+    max-width: 243px; } }
