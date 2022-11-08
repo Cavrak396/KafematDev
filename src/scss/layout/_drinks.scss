@@ -1,0 +1,191 @@
+/**Drinks section propery**/
+.drinks {
+  margin-bottom: 291px;
+}
+//DRINKS INNER PROPS
+.drinks__inner-text {
+  margin: 0 auto;
+  max-width: 500px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-left: 8px;
+  margin-bottom: 92px;
+}
+.cocktails__inner {
+  margin-left: auto;
+}
+.beer__inner,
+.intensity-inner,
+.cocktails__inner {
+  max-width: 344px;
+  flex: 1 1 344px;
+}
+
+.cocktails__img {
+  max-width: 100%;
+  flex: 1 1 100%;
+  margin-bottom: 28px;
+}
+
+.cocktails__description {
+  font-size: 13px;
+  max-width: 298px;
+  letter-spacing: 0.1px;
+  line-height: 22px;
+}
+
+//DRINKS MENU
+.drinks__menu-line {
+  display: flex;
+  flex-wrap: wrap;
+}
+.drinks__menu-classic {
+  max-width: 65.8%;
+  flex: 1 1 66.8%;
+}
+.cocktails__menu--size {
+  padding: 31px 17px 0 0;
+}
+
+//DRINKS MENU PROPS
+.drinks__menu-coffe {
+  max-width: 100%;
+  background-color: $light_black;
+  padding: 24px 24px 0 24px;
+  min-height: 230px;
+  margin-bottom: 78px;
+}
+.coffe__menu-line {
+  display: flex;
+}
+.cocktails__menu {
+  max-width: 33.2%;
+  flex: 1 1 33.2%;
+}
+
+.beer__menu,
+.intensity__menu {
+  max-width: 389px;
+  flex: 1 1 389px;
+  padding-left: 45px;
+}
+
+//DRINKS NAMES PROPS
+.coffe__name,
+.beer__name,
+.intensity__name,
+.cocktails__name {
+  color: $white;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+.beer__name,
+.intensity__name,
+.cocktails__name {
+  color: $black;
+}
+.drinks__menu-alcohol-line {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+//DRINKS PRICE PROPERY
+.beer__price,
+.intensity__price,
+.cocktails__price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.beer__price,
+.intensity__price {
+  margin-bottom: 36px;
+}
+.cocktails__price {
+  margin-bottom: 8px;
+}
+
+.coffe__price {
+  display: flex;
+  justify-content: space-between;
+  max-width: 366px;
+  flex: 1 1 366px;
+  margin-bottom: 36px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.coffe__cost {
+  color: $white;
+  font-style: italic;
+  font-size: 15px;
+}
+.cocktails__about {
+  margin-bottom: 31px;
+}
+
+//DRINKS UNDERHEADERS
+.beer__underheader,
+.intensity__underheader {
+  @include drinks_underheader;
+  margin-bottom: 36px;
+}
+.cocktails__underheader {
+  margin-bottom: 22px;
+  @include drinks_underheader;
+}
+
+.drinks__inner-underheader {
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-left: -9px;
+  color: $gray;
+}
+
+.coffe__menu-column,
+.coffe__menu-column--changer {
+  max-width: 50%;
+  flex: 1 1 50%;
+}
+.coffe__menu-column--changer {
+  padding-left: 57px;
+}
+@media screen and (max-width: 425px) {
+  .drinks {
+    margin-bottom: 148px;
+  }
+  .coffe__menu-line {
+    flex-direction: column;
+  }
+  .drinks__menu-classic {
+    max-width: 100%;
+    flex: 1 1 100%;
+    min-height: 250px;
+  }
+  .coffe__menu-column,
+  .coffe__menu-column--changer {
+    max-width: 100%;
+    flex: 1 1 100%;
+    padding-left: 0;
+    margin-bottom: 36px;
+  }
+  .cocktails__menu {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  .cocktails__menu--size {
+    padding: 0;
+  }
+  .cocktails__inner {
+    margin: 0 auto;
+  }
+  .beer__menu,
+  .intensity__menu {
+    max-width: 389px;
+    flex: 1 1 389px;
+    padding: 0 45px;
+  }
+}

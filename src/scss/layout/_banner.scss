@@ -1,0 +1,34 @@
+/**Banner setting**/
+.banner {
+  margin-bottom: 81px;
+  position: relative;
+  z-index: 0;
+}
+
+.banner__wallpaper,
+.banner__wallpaper-responsive {
+  max-width: 100%;
+  min-height: 813px;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 9999;
+  background-position-x: 4px;
+  background-position-y: 81px;
+  @include background;
+}
+
+@media screen and (max-width: 425px) {
+  .banner {
+    .main-wrapper {
+      padding: 0;
+    }
+  }
+  .banner__wallpaper-responsive {
+    min-height: 463px;
+    background-size: cover;
+    display: block;
+  }
+  .banner__wallpaper {
+    display: none;
+  }
+}

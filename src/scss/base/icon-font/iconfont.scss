@@ -1,0 +1,67 @@
+@font-face {
+	font-family: 'iconfont';
+	src: url('../fonts/iconfont.eot?1666904158857');
+	src: url('../fonts/iconfont.eot?#iefix-1666904158857') format('embedded-opentype'),
+		url('../fonts/iconfont.woff2?1666904158857') format('woff2'),
+		url('../fonts/iconfont.woff?1666904158857') format('woff'),
+		url('../fonts/iconfont.ttf?1666904158857') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+   [class^='icon-']:before,
+   [class*=' icon-']:before {
+    font-family: 'iconfont';
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    font-weight: normal;
+    font-style: normal;
+    speak: none;
+    text-decoration: inherit;
+    font-size: inherit;
+    text-transform: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+   }
+   
+   /*
+   Glyphs list
+   */
+   
+   .icon-icon-bicycle:before {
+    content: '\ea01';
+   }
+   
+   .icon-icon-caffe:before {
+    content: '\ea02';
+   }
+   
+   .icon-icon-calendar:before {
+    content: '\ea03';
+   }
+   
+   .icon-icon-eat:before {
+    content: '\ea04';
+   }
+   
+   .icon-icon-facebook:before {
+    content: '\ea05';
+   }
+   
+   .icon-icon-instagram:before {
+    content: '\ea06';
+   }
+      
+   .icon-icon-facebook-bottom:before {
+      content: '\ea05';
+     }
+     
+     .icon-icon-instagram-bottom:before {
+      content: '\ea06';
+     }
+   .icon-icon-location:before {
+    content: '\ea07';
+   }
+   

@@ -1,0 +1,41 @@
+//Universal button class
+
+.classic-button {
+  border: $black solid 2px;
+@include classic_btn;
+}
+.menu__buttons {
+  padding: 13px 24px;
+  border: $white solid 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1.1px;
+  margin-bottom: -3px;
+  &:hover {
+    border: $black solid 2px;
+    cursor: pointer;
+    transition: $fast;
+  }
+}
+.clicked {
+  border: $black solid 2px;
+  color: $yellow;
+}
+//Other buttons
+
+.card__button {
+  &:hover {
+    background-color: $black;
+    color: $white;
+    transition: $fast;
+  }
+}
+.welcome__button {
+  background-color: $black;
+  color: $white;
+  &:hover {
+    opacity: 0.6;
+    transition: $fast;
+    cursor: pointer;
+  }
+}

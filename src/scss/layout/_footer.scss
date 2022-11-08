@@ -1,0 +1,229 @@
+/**FOOTER PROPS**/
+.footer {
+  margin-bottom: 50px;
+}
+.footer__line {
+  display: flex;
+  margin: 0 -12px;
+}
+.footer__contact {
+  max-width: calc(33.33% - 24px);
+  flex: 1 1 calc(33.33% - 24px);
+  background-color: $dark_gray;
+  margin: 0 12px;
+  padding: 28px 0 0 46px;
+  min-height: 573px;
+  @include background;
+  background-size: cover;
+}
+
+//First location block props
+.contact__address {
+  max-width: 167px;
+  margin: 11px 0 39px 0;
+}
+
+
+.contact__adress-name {
+  color: $gray;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 27px;
+}
+
+.location__link {
+  color: $white;
+  border: $white solid 2px;
+  letter-spacing: 1px;
+  &:hover {
+    background-color: $white;
+    color: $black;
+  }
+}
+.contact__information {
+  color: $gray;
+  margin: 42px 0 44px 0;
+  font-size: 15px;
+
+  .contact__number {
+    letter-spacing: -0.1px;
+    margin-bottom: 13px;
+  }
+  .contact__mail {
+    letter-spacing: -0.3px;
+    a {
+      color: $gray;
+      &:hover {
+        opacity:0.7;
+      }
+    }
+  }
+}
+.contact__phone {
+  color: $gray;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.contact__social-media-link {
+  padding: 3px 12px 9px 12px;
+  border: solid 2px $white;
+  color: $white;
+  &:hover {
+    color: $black;
+    background-color: $white;
+  }
+}
+.contact__social-media-linked {
+  margin-right: 5px;
+}
+
+//INPUT HOLDER
+.contact__users-text {
+  margin-bottom: 185px;
+  padding-top: 3px;
+}
+.contact__info-line {
+  border: none;
+  border-bottom: dashed 1px $gray;
+  background-color: $dark_gray;
+  color: $gray;
+  display: block;
+  font-size: 17px;
+  padding-bottom: 15px;
+  width: 91%;
+  margin-bottom: 16px;
+  letter-spacing: 0.7px;
+  font-weight: 300;
+}
+//Verification
+.contact__verification {
+  border: $gray solid 1px;
+  border-radius: 2px;
+  max-width: 301px;
+  margin-bottom: 12px;
+}
+.contact__verification--line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.verification__property {
+  display: flex;
+  color: $white;
+  align-items: center;
+  padding-top: 4px;
+}
+.verification__checkbox {
+  width: 46px;
+  height: 29px;
+}
+.verification__text {
+  font-size: 13px;
+  font-weight: 700;
+}
+.classic-button--verification {
+  @include classic_btn;
+  border: $white solid 1px;
+  background: none;
+  color: $white;
+  padding: 12px 13px;
+  &:hover {
+    background-color: $white;
+    color: $black;
+    cursor: pointer;
+  }
+}
+//Firm
+.verification__firm {
+  color: $white;
+  text-align: center;
+  padding: 9px 9px 0 0;
+  line-height: 12px;
+  .verification__img-text {
+    font-size: 10px;
+  }
+  a {
+    color: $white;
+    font-size: 8px;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+.verification__img-text {
+  margin-bottom: 3px;
+}
+.verification__privacy {
+  display: flex;
+  align-items: center;
+  span {
+    margin: 0 2px;
+  }
+}
+.verification__img {
+  max-width: 35px;
+}
+//Footer bottom
+
+.footer__bottom-holder {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 128px 0 20px 0;
+  text-align: center;
+  color: $gray;
+}
+.bottom-holder__media {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-bottom: 46px;
+}
+.bottom-holder__copyright {
+  letter-spacing: 0.3px;
+  font-size: 13px;
+}
+
+//Icon
+.contact__social-media {
+  display: flex;
+  margin-top: 72px;
+}
+
+.icon-icon-location,
+.icon-icon-facebook,
+.icon-icon-instagram {
+  font-size: 11px;
+}
+.icon-icon-instagram-bottom,
+.icon-icon-facebook-bottom {
+  font-size: 22px;
+  color: $gray;
+}
+
+@media screen and (max-width: 425px) {
+  .footer__line {
+    flex-direction: column;
+  }
+
+  .footer__contact {
+    max-width: 100%;
+    flex: 1 1 100%;
+    margin-bottom: 50px;
+    padding: 28px 0 0 20px;
+  }
+  .footer__contact-image {
+    min-height: 300px;
+  }
+}
+@media screen and (max-width: 320px)  {
+.verification {
+  margin: 0 auto;
+}
+  .contact__verification {
+  max-width: 243px;
+  
+}
+}

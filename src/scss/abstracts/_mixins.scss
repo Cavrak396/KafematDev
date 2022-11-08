@@ -1,0 +1,24 @@
+/**Mixins for project**/ 
+
+//Background image
+
+@mixin background {
+    background-repeat: no-repeat;
+    //background-size: cover;
+    
+}
+//Drinks underheader
+@mixin drinks_underheader {
+    font-size: 14px;
+    color: $gray;
+    font-family: "Noto Serif Georgian";
+    font-style: italic;
+}
+//Classic button 
+@mixin classic_btn{
+padding: 8px 13px;
+text-transform: uppercase;
+font-size: 13px;
+letter-spacing: 1.1px;   
+transition: $fast;
+}

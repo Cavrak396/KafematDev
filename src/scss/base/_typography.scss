@@ -1,0 +1,34 @@
+/**Typography for project*/
+
+//Global typography
+body {
+  font-family: "Open Sans";
+}
+
+//All Header
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Roboto Condensed";
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+//Unique header
+h4 {
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+//Links
+a {
+  text-decoration: none;
+  color: $black;
+  transition: $fast;
+}
+

@@ -1,0 +1,64 @@
+/**EVENTS PROPERTY**/
+.events {
+  margin-bottom: 82px;
+}
+
+.events__inner-text {
+  margin: 0 auto 208px auto;
+  max-width: 500px;
+  text-align: center;
+}
+//Events join
+.event__underheader-text {
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  font-size: 15px;
+  line-height: 23px;
+  color: $gray;
+}
+
+//Standards
+.events__standards {
+  border: $black solid 1px;
+  max-width: 100%;
+  @include background;
+  background-size: cover;
+  min-height: 1179px;
+  background-attachment: fixed;
+}
+.events__header-inner {
+  padding-top: 130px;
+  text-align: center;
+  margin-bottom: 62px;
+}
+.standards__about-text {
+  background-color: $dark_gray;
+  color: $white;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 698px;
+  padding: 57px 0 0 0;
+  min-height: 717px;
+}
+.standards__about-object {
+  margin: 0 auto;
+  max-width: 653px;
+  margin-bottom: 35px;
+}
+.about-object__text {
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: -0.3px;
+  color: $gray;
+}
+@media screen and (max-width: 425px) {
+  .standards__about-text {
+    padding: 57px 20px 0 20px;
+  }
+  .standards__about-object {
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 45px;
+    }
+  }
+}

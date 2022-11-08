@@ -1,0 +1,48 @@
+/**WORKTIME PROPS**/
+.worktime {
+  margin-bottom: 167px;
+}
+.worktime__inner-text {
+  max-width: 600px;
+  margin: 0 auto 125px auto;
+  text-align: center;
+}
+//Underheader
+.worktime__underheader {
+  color: $gray;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+
+}
+//Times
+.worktime__times {
+    margin: 0 auto;
+    max-width: 488px;
+}
+.times__days {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 47px;
+}
+.times__hours {
+    font-size: 22px;
+    font-family:  "Roboto Condensed";
+    letter-spacing: 0.4px;
+}
+@media screen and (max-width: 425px) {
+  
+.worktime {
+  margin-bottom: 100px;
+}
+
+  .times__days {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 47px;
+}
+.times__day {
+  margin-bottom: 15px;
+}
+}

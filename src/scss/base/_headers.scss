@@ -1,0 +1,125 @@
+/*ALL HEADERS IN PROJECT*/
+
+h1 {
+  display: none;
+}
+.card__header {
+  margin-top: 19px;
+}
+
+//Welcome header
+.welcome__text-header {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-bottom: 46px;
+  position: relative;
+  padding-bottom: 28px;
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: $black;
+    width: 39px;
+    height: 1px;
+    border: $black solid 1px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+//Drinks header Dessert 
+.drinks__inner-header {
+  font-size: 72px;
+  font-weight: 700;
+  letter-spacing: 7.2px;
+  margin-bottom: 46px;
+}
+.coffe__header,
+.dessert__header {
+  margin-bottom: 42px;
+}
+.coffe__header,
+.beer__header,
+.intensity__header,
+.cocktails__header,
+.food__header,
+.dessert__header {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 2.3px;
+  color: $white;
+  border-bottom: 5px solid $white;
+  padding-bottom: 3px;
+}
+.food__header {
+  color: $black;
+  border-bottom: 5px solid $black;
+  margin-bottom: 37px;
+}
+.price-name__header {
+  max-width: 332px;
+  letter-spacing: 0.6px;
+  font-weight: bold;
+  line-height: 27px;
+}
+.beer__header,
+.intensity__header {
+  color: $black;
+  border-bottom: $black solid 5px;
+  margin-bottom: 23px;
+}
+.cocktails__header {
+  border-top: dotted 3px $black;
+  border-bottom: dotted 3px $black;
+  color: $black;
+  padding: 6px 0 5px 0;
+  margin-bottom: 22px;
+}
+//Event headers
+.events__header,
+.worktime__header,
+.menu__inner-header {
+  font-size: 73px;
+  font-weight: 700;
+  letter-spacing: 6.6px;
+  margin-bottom: 43px;
+}
+.standards__header {
+  font-size: 70.2px;
+  font-weight: 700;
+  color: $white;
+  letter-spacing: 5.9px;
+}
+.about-object__header {
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  font-size: 20px;
+  margin-bottom: 29px;
+}
+//Days header
+.times__day {
+  font-size: 22px;
+  letter-spacing: 0.3px;
+  font-weight: 300;
+}
+@media screen and (max-width: 425px) {
+  .standards__header {
+    font-size: 45.2px;
+  }
+  .price-name__header {
+    max-width: 305px;
+  }
+
+  .events__header,
+  .worktime__header,
+  .menu__inner-header {
+    font-size: 56px;
+  }
+  .drinks__inner-header,
+  .welcome__text-header {
+    font-size: 45px;
+  }
+}

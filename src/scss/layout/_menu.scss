@@ -1,0 +1,166 @@
+/**MENU PROPERY**/
+
+.menu {
+  margin-bottom: 130px;
+}
+
+.menu__inner-text {
+  text-align: center;
+  margin: 0 auto 68px auto;
+  max-width: 500px;
+}
+.menu__inner-underheader {
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  font-size: 15px;
+  line-height: 23px;
+  color: $gray;
+}
+//Buttons
+
+.menu__holder-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 13px;
+  margin-bottom: 54px;
+}
+//Breakfast special settings
+.breakfast {
+  display: none;
+}
+//Menu columns
+.food__columns {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -30px;
+}
+
+.food__column-list,
+.apetizzer__column {
+  max-width: calc(33.33% - 60px);
+  flex: 1 1 calc(33.33% - 60px);
+  margin: 0 30px;
+}
+.apetizzer__column {
+  .food__column-list {
+    max-width: 100%;
+    flex: 1 1 100%;
+    margin: 0;
+  }
+}
+.food__price-name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1px;
+  align-items: center;
+}
+.food__price {
+  margin-bottom: 25px;
+}
+.price-name__cost {
+  font-style: italic;
+  font-size: 15px;
+}
+.food__price-description {
+  font-size: 13px;
+  max-width: 315px;
+  line-height: 24px;
+}
+.food__underheader-text {
+  color: $gray;
+  font-size: 14px;
+  margin-bottom: 28px;
+  font-family: "Noto Serif Georgian";
+  font-style: italic;
+}
+//Dessert props
+.desserts__main-line {
+  display: flex;
+}
+.food__columns-desert {
+  max-width: calc(65% - 50px);
+  flex: 1 1 calc(65% - 50px);
+}
+.desert__menu {
+  max-width: calc(35% - 50px);
+  flex: 1 1 calc(35% - 50px);
+  background-color: $light_black;
+  max-height: 310px;
+  .desert__menu-inner {
+    padding: 24px;
+  }
+}
+.desert__price {
+  display: flex;
+  justify-content: space-between;
+  max-width: 366px;
+  flex: 1 1 366px;
+  margin-bottom: 36px;
+}
+.food__columns-desert,
+.desert__menu {
+  margin: 0 25px;
+}
+.desert__line {
+  display: flex;
+  margin: 0 -30px;
+}
+
+.desert__column-list {
+  max-width: calc(50% - 60px);
+  flex: 1 1 calc(50% - 60px);
+  margin: 0 30px;
+}
+.dessert__price {
+  display: flex;
+  justify-content: space-between;
+  max-width: 366px;
+  flex: 1 1 366px;
+  margin-bottom: 36px;
+}
+.dessert__name {
+  color: $white;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+.dessert__cost {
+  color: $white;
+  font-style: italic;
+  font-size: 15px;
+}
+@media screen and (max-width: 425px) {
+  .food__column-list,
+  .apetizzer__column {
+    max-width: 100%;
+    flex: 1 1 100%;
+    margin: 0 30px;
+  }
+  .menu__inner-underheader {
+    font-size: 13px;
+  }
+  .food__underheader-text {
+    line-height: 20px;
+  }
+  .food__columns-desert {
+    max-width: 100%;
+    flex: 1 1 100%;
+    margin: 0 auto;
+  }
+  .desserts__main-line,
+   .desert__line {
+    flex-direction: column;
+  }
+  .desert__column-list {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  .desert__menu {
+    max-width: 100%;
+    flex: 1 1 100%;
+    margin: 0 -5px;
+    min-height: 404px;
+  } 
+  
+
+}

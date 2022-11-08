@@ -1,0 +1,44 @@
+/**Helper classes for project**/
+body {
+  overflow-x: hidden;
+
+
+}
+
+//Wrappers
+.main-wrapper {
+  margin: 0 auto;
+  max-width: 1855px;
+  padding: 0 15px;
+}
+.secondary-wrapper {
+  max-width: 1486px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.small-wrapper {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1284px;
+
+}
+.disappear,
+.unactive {
+  display: none;
+}
+
+.appear {
+  display: block !important;
+}
+.button--activated {
+  color:$yellow;
+  border: $black solid 1px;
+}
+
+@media screen and (max-width: 425px) {
+
+  body {
+    padding: 0 15px;
+  }
+}
